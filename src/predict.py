@@ -19,6 +19,10 @@ new_student = [[
 
 prediction = model.predict(new_student)
 
+probability = model.predict_proba(new_student)
+
+print("\nProbability of Pass:", round(probability[0][1] * 100, 2), "%")
+
 if prediction[0] == 1:
     print("\nPrediction: Pass")
 else:
