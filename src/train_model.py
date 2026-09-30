@@ -111,3 +111,14 @@ else:
 joblib.dump(model, "model/student_model.pkl")
 
 print("\nModel saved successfully!")
+
+
+import matplotlib.pyplot as plt
+
+plt.imshow(cm)
+plt.title("Confusion Matrix")
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.colorbar()
+
+plt.show()
