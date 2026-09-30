@@ -10,13 +10,16 @@ The project uses Logistic Regression for binary classification.
 
 The main objective of this project is to understand the basic machine learning workflow:
 
-- Data loading
-- Data checking
-- Feature selection
-- Train-test splitting
-- Model training
-- Prediction
-- Model evaluation
+## How the Model Works
+
+1. Load the student performance dataset using Pandas.
+2. Select important features such as study hours, attendance, previous score, and assignments completed.
+3. Split the data into training and testing sets.
+4. Train a Logistic Regression model.
+5. Evaluate the model using accuracy, classification report, and confusion matrix.
+6. Save the trained model using Joblib.
+7. Use the saved model to predict whether a new student will Pass or Fail.
+8. Display the probability of the predicted result.
 
 ## 🛠️ Technologies Used
 
